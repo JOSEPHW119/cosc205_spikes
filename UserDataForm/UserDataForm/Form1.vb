@@ -43,4 +43,15 @@ Public Class Form1
         genderCBX.Text = ""
         goalsCBX.Text = ""
     End Sub
+
+    Private Sub addMealBTN_Click(sender As Object, e As EventArgs) Handles addMealBTN.Click
+        ' Create an instance of AddMealForm
+        Dim addMealForm As New AddMealForm()
+
+        ' Hide Form1
+        Me.Hide()
+
+        ' Show AddMealForm
+        addMealForm.Show()
+    End Sub
 End Class

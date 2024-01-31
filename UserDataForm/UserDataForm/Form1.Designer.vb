@@ -37,6 +37,7 @@ Partial Class Form1
         Me.genderLBL = New System.Windows.Forms.Label()
         Me.emailTBX = New System.Windows.Forms.TextBox()
         Me.emailLBL = New System.Windows.Forms.Label()
+        Me.addMealBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'submitBTN
@@ -56,7 +57,7 @@ Partial Class Form1
         Me.infoLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.infoLBL.Location = New System.Drawing.Point(75, 129)
         Me.infoLBL.Name = "infoLBL"
-        Me.infoLBL.Size = New System.Drawing.Size(591, 24)
+        Me.infoLBL.Size = New System.Drawing.Size(759, 29)
         Me.infoLBL.TabIndex = 30
         Me.infoLBL.Text = "Please fill out the following fields. When you are finished, click Submit."
         '
@@ -66,7 +67,7 @@ Partial Class Form1
         Me.fitnessLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fitnessLBL.Location = New System.Drawing.Point(69, 67)
         Me.fitnessLBL.Name = "fitnessLBL"
-        Me.fitnessLBL.Size = New System.Drawing.Size(289, 39)
+        Me.fitnessLBL.Size = New System.Drawing.Size(351, 47)
         Me.fitnessLBL.TabIndex = 29
         Me.fitnessLBL.Text = "User Fitness Data"
         '
@@ -76,7 +77,7 @@ Partial Class Form1
         Me.goalsCBX.Items.AddRange(New Object() {"Weight Loss", "Muscle Gain"})
         Me.goalsCBX.Location = New System.Drawing.Point(275, 584)
         Me.goalsCBX.Name = "goalsCBX"
-        Me.goalsCBX.Size = New System.Drawing.Size(181, 37)
+        Me.goalsCBX.Size = New System.Drawing.Size(181, 40)
         Me.goalsCBX.TabIndex = 28
         '
         'goalsLBL
@@ -84,7 +85,7 @@ Partial Class Form1
         Me.goalsLBL.AutoSize = True
         Me.goalsLBL.Location = New System.Drawing.Point(100, 587)
         Me.goalsLBL.Name = "goalsLBL"
-        Me.goalsLBL.Size = New System.Drawing.Size(207, 29)
+        Me.goalsLBL.Size = New System.Drawing.Size(243, 32)
         Me.goalsLBL.TabIndex = 27
         Me.goalsLBL.Text = "Goals (Choose 1):"
         '
@@ -92,7 +93,7 @@ Partial Class Form1
         '
         Me.ageTBX.Location = New System.Drawing.Point(275, 268)
         Me.ageTBX.Name = "ageTBX"
-        Me.ageTBX.Size = New System.Drawing.Size(181, 34)
+        Me.ageTBX.Size = New System.Drawing.Size(181, 39)
         Me.ageTBX.TabIndex = 26
         '
         'ageLBL
@@ -100,7 +101,7 @@ Partial Class Form1
         Me.ageLBL.AutoSize = True
         Me.ageLBL.Location = New System.Drawing.Point(100, 271)
         Me.ageLBL.Name = "ageLBL"
-        Me.ageLBL.Size = New System.Drawing.Size(62, 29)
+        Me.ageLBL.Size = New System.Drawing.Size(73, 32)
         Me.ageLBL.TabIndex = 25
         Me.ageLBL.Text = "Age:"
         '
@@ -108,7 +109,7 @@ Partial Class Form1
         '
         Me.weightTBX.Location = New System.Drawing.Point(275, 420)
         Me.weightTBX.Name = "weightTBX"
-        Me.weightTBX.Size = New System.Drawing.Size(181, 34)
+        Me.weightTBX.Size = New System.Drawing.Size(181, 39)
         Me.weightTBX.TabIndex = 24
         '
         'weightLBL
@@ -116,7 +117,7 @@ Partial Class Form1
         Me.weightLBL.AutoSize = True
         Me.weightLBL.Location = New System.Drawing.Point(100, 423)
         Me.weightLBL.Name = "weightLBL"
-        Me.weightLBL.Size = New System.Drawing.Size(94, 29)
+        Me.weightLBL.Size = New System.Drawing.Size(111, 32)
         Me.weightLBL.TabIndex = 23
         Me.weightLBL.Text = "Weight:"
         '
@@ -124,7 +125,7 @@ Partial Class Form1
         '
         Me.heightTBX.Location = New System.Drawing.Point(275, 343)
         Me.heightTBX.Name = "heightTBX"
-        Me.heightTBX.Size = New System.Drawing.Size(181, 34)
+        Me.heightTBX.Size = New System.Drawing.Size(181, 39)
         Me.heightTBX.TabIndex = 22
         '
         'heightLBL
@@ -132,7 +133,7 @@ Partial Class Form1
         Me.heightLBL.AutoSize = True
         Me.heightLBL.Location = New System.Drawing.Point(100, 346)
         Me.heightLBL.Name = "heightLBL"
-        Me.heightLBL.Size = New System.Drawing.Size(89, 29)
+        Me.heightLBL.Size = New System.Drawing.Size(105, 32)
         Me.heightLBL.TabIndex = 21
         Me.heightLBL.Text = "Height:"
         '
@@ -142,7 +143,7 @@ Partial Class Form1
         Me.genderCBX.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.genderCBX.Location = New System.Drawing.Point(275, 499)
         Me.genderCBX.Name = "genderCBX"
-        Me.genderCBX.Size = New System.Drawing.Size(181, 37)
+        Me.genderCBX.Size = New System.Drawing.Size(181, 40)
         Me.genderCBX.TabIndex = 20
         '
         'genderLBL
@@ -150,7 +151,7 @@ Partial Class Form1
         Me.genderLBL.AutoSize = True
         Me.genderLBL.Location = New System.Drawing.Point(100, 502)
         Me.genderLBL.Name = "genderLBL"
-        Me.genderLBL.Size = New System.Drawing.Size(100, 29)
+        Me.genderLBL.Size = New System.Drawing.Size(117, 32)
         Me.genderLBL.TabIndex = 19
         Me.genderLBL.Text = "Gender:"
         '
@@ -158,7 +159,7 @@ Partial Class Form1
         '
         Me.emailTBX.Location = New System.Drawing.Point(275, 191)
         Me.emailTBX.Name = "emailTBX"
-        Me.emailTBX.Size = New System.Drawing.Size(299, 34)
+        Me.emailTBX.Size = New System.Drawing.Size(299, 39)
         Me.emailTBX.TabIndex = 18
         '
         'emailLBL
@@ -166,15 +167,26 @@ Partial Class Form1
         Me.emailLBL.AutoSize = True
         Me.emailLBL.Location = New System.Drawing.Point(100, 194)
         Me.emailLBL.Name = "emailLBL"
-        Me.emailLBL.Size = New System.Drawing.Size(80, 29)
+        Me.emailLBL.Size = New System.Drawing.Size(94, 32)
         Me.emailLBL.TabIndex = 17
         Me.emailLBL.Text = "Email:"
         '
+        'addMealBTN
+        '
+        Me.addMealBTN.Location = New System.Drawing.Point(106, 648)
+        Me.addMealBTN.Name = "addMealBTN"
+        Me.addMealBTN.Size = New System.Drawing.Size(158, 37)
+        Me.addMealBTN.TabIndex = 32
+        Me.addMealBTN.Text = "Add Meal"
+        Me.addMealBTN.UseVisualStyleBackColor = True
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 29.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(782, 753)
+        Me.Controls.Add(Me.addMealBTN)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.infoLBL)
         Me.Controls.Add(Me.fitnessLBL)
@@ -191,7 +203,7 @@ Partial Class Form1
         Me.Controls.Add(Me.emailTBX)
         Me.Controls.Add(Me.emailLBL)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -214,4 +226,5 @@ Partial Class Form1
     Friend WithEvents genderLBL As Label
     Friend WithEvents emailTBX As TextBox
     Friend WithEvents emailLBL As Label
+    Friend WithEvents addMealBTN As Button
 End Class
