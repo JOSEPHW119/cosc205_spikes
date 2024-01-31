@@ -46,4 +46,15 @@
     Private Sub Form_Suggestion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Create an instance of MainMenu
+        Dim addFitness As New MainMenu()
+
+        ' Hide Suggestions
+        Me.Hide()
+
+        ' Show MainMenu
+        MainMenu.Show()
+    End Sub
 End Class

@@ -38,6 +38,7 @@ Partial Class AddMealForm
         Me.FatCBX = New System.Windows.Forms.ComboBox()
         Me.FruitCBX = New System.Windows.Forms.ComboBox()
         Me.submitBTN = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'proteinLBL
@@ -196,11 +197,21 @@ Partial Class AddMealForm
         Me.submitBTN.Text = "Submit"
         Me.submitBTN.UseVisualStyleBackColor = True
         '
-        'form1
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(13, 13)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(109, 45)
+        Me.Button1.TabIndex = 17
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'AddMealForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(17.0!, 33.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(884, 461)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.FruitCBX)
         Me.Controls.Add(Me.FatCBX)
@@ -219,7 +230,7 @@ Partial Class AddMealForm
         Me.Controls.Add(Me.proteinLBL)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
-        Me.Name = "form1"
+        Me.Name = "AddMealForm"
         Me.Text = "Meal Tracker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -242,4 +253,5 @@ Partial Class AddMealForm
     Friend WithEvents FatCBX As ComboBox
     Friend WithEvents FruitCBX As ComboBox
     Friend WithEvents submitBTN As Button
+    Friend WithEvents Button1 As Button
 End Class
