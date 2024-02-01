@@ -958,11 +958,16 @@ Namespace FitnessAppDBDataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Private Sub InitCommandCollection()
+<<<<<<< HEAD
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
+=======
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+>>>>>>> origin/main
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT email, age, height_cm, weight_kg, gender, goal FROM dbo.Users"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+<<<<<<< HEAD
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
             Me._commandCollection(1).CommandText = "INSERT INTO [dbo].[Users] ([email], [age], [height_cm], [weight_kg], [gender], [g"& _ 
@@ -974,6 +979,8 @@ Namespace FitnessAppDBDataSetTableAdapters
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@weight_kg", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "weight_kg", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@gender", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "gender", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@goal", Global.System.Data.SqlDbType.VarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "goal", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+=======
+>>>>>>> origin/main
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1175,6 +1182,7 @@ Namespace FitnessAppDBDataSetTableAdapters
         Public Overloads Overridable Function Update(ByVal age As Integer, ByVal height_cm As Integer, ByVal weight_kg As Integer, ByVal gender As String, ByVal goal As String, ByVal Original_email As String, ByVal Original_age As Integer, ByVal Original_height_cm As Integer, ByVal Original_weight_kg As Integer, ByVal Original_gender As String, ByVal Original_goal As String) As Integer
             Return Me.Update(Original_email, age, height_cm, weight_kg, gender, goal, Original_email, Original_age, Original_height_cm, Original_weight_kg, Original_gender, Original_goal)
         End Function
+<<<<<<< HEAD
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),  _
@@ -1215,6 +1223,8 @@ Namespace FitnessAppDBDataSetTableAdapters
             End Try
             Return returnValue
         End Function
+=======
+>>>>>>> origin/main
     End Class
     
     '''<summary>
