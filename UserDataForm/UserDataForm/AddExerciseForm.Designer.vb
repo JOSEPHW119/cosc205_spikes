@@ -49,10 +49,9 @@ Partial Class AddExerciseForm
         'titleLBL
         '
         Me.titleLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.titleLBL.Location = New System.Drawing.Point(260, 14)
-        Me.titleLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.titleLBL.Location = New System.Drawing.Point(181, 26)
         Me.titleLBL.Name = "titleLBL"
-        Me.titleLBL.Size = New System.Drawing.Size(372, 57)
+        Me.titleLBL.Size = New System.Drawing.Size(248, 37)
         Me.titleLBL.TabIndex = 2
         Me.titleLBL.Text = "Add Exercise"
         Me.titleLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -61,96 +60,91 @@ Partial Class AddExerciseForm
         '
         Me.addCardioLBL.AutoSize = True
         Me.addCardioLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addCardioLBL.Location = New System.Drawing.Point(39, 97)
-        Me.addCardioLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.addCardioLBL.Location = New System.Drawing.Point(17, 104)
         Me.addCardioLBL.Name = "addCardioLBL"
-        Me.addCardioLBL.Size = New System.Drawing.Size(112, 37)
+        Me.addCardioLBL.Size = New System.Drawing.Size(75, 25)
         Me.addCardioLBL.TabIndex = 3
         Me.addCardioLBL.Text = "Cardio"
         '
         'addCardioCBX
         '
+        Me.addCardioCBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addCardioCBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addCardioCBX.FormattingEnabled = True
         Me.addCardioCBX.Items.AddRange(New Object() {"Running", "Cycling"})
-        Me.addCardioCBX.Location = New System.Drawing.Point(224, 94)
-        Me.addCardioCBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addCardioCBX.Location = New System.Drawing.Point(140, 102)
         Me.addCardioCBX.Name = "addCardioCBX"
-        Me.addCardioCBX.Size = New System.Drawing.Size(180, 41)
+        Me.addCardioCBX.Size = New System.Drawing.Size(121, 32)
         Me.addCardioCBX.TabIndex = 5
         '
         'addAerobicsLBL
         '
         Me.addAerobicsLBL.AutoSize = True
         Me.addAerobicsLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addAerobicsLBL.Location = New System.Drawing.Point(39, 228)
-        Me.addAerobicsLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.addAerobicsLBL.Location = New System.Drawing.Point(17, 189)
         Me.addAerobicsLBL.Name = "addAerobicsLBL"
-        Me.addAerobicsLBL.Size = New System.Drawing.Size(142, 37)
+        Me.addAerobicsLBL.Size = New System.Drawing.Size(96, 25)
         Me.addAerobicsLBL.TabIndex = 6
         Me.addAerobicsLBL.Text = "Aerobics"
         '
         'addAerobicsCBX
         '
+        Me.addAerobicsCBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addAerobicsCBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addAerobicsCBX.FormattingEnabled = True
         Me.addAerobicsCBX.Items.AddRange(New Object() {"Swimming", "Jump Rope", "Elliptical", "Walking", "Hiking"})
-        Me.addAerobicsCBX.Location = New System.Drawing.Point(224, 225)
-        Me.addAerobicsCBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addAerobicsCBX.Location = New System.Drawing.Point(140, 187)
         Me.addAerobicsCBX.Name = "addAerobicsCBX"
-        Me.addAerobicsCBX.Size = New System.Drawing.Size(180, 41)
+        Me.addAerobicsCBX.Size = New System.Drawing.Size(121, 32)
         Me.addAerobicsCBX.TabIndex = 7
         '
         'addAnaerobicLBL
         '
         Me.addAnaerobicLBL.AutoSize = True
         Me.addAnaerobicLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addAnaerobicLBL.Location = New System.Drawing.Point(39, 360)
-        Me.addAnaerobicLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.addAnaerobicLBL.Location = New System.Drawing.Point(17, 275)
         Me.addAnaerobicLBL.Name = "addAnaerobicLBL"
-        Me.addAnaerobicLBL.Size = New System.Drawing.Size(178, 37)
+        Me.addAnaerobicLBL.Size = New System.Drawing.Size(120, 25)
         Me.addAnaerobicLBL.TabIndex = 8
         Me.addAnaerobicLBL.Text = "Anaerobics"
         '
         'addAnaerobicCBX
         '
+        Me.addAnaerobicCBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addAnaerobicCBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addAnaerobicCBX.FormattingEnabled = True
         Me.addAnaerobicCBX.Items.AddRange(New Object() {"Weightlifting", "Sprinting", "HIIT training"})
-        Me.addAnaerobicCBX.Location = New System.Drawing.Point(224, 357)
-        Me.addAnaerobicCBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addAnaerobicCBX.Location = New System.Drawing.Point(140, 273)
         Me.addAnaerobicCBX.Name = "addAnaerobicCBX"
-        Me.addAnaerobicCBX.Size = New System.Drawing.Size(180, 41)
+        Me.addAnaerobicCBX.Size = New System.Drawing.Size(121, 32)
         Me.addAnaerobicCBX.TabIndex = 9
         '
         'timeCardioLBL
         '
         Me.timeCardioLBL.AutoSize = True
         Me.timeCardioLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.timeCardioLBL.Location = New System.Drawing.Point(429, 97)
-        Me.timeCardioLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.timeCardioLBL.Location = New System.Drawing.Point(277, 104)
         Me.timeCardioLBL.Name = "timeCardioLBL"
-        Me.timeCardioLBL.Size = New System.Drawing.Size(180, 37)
+        Me.timeCardioLBL.Size = New System.Drawing.Size(119, 25)
         Me.timeCardioLBL.TabIndex = 10
         Me.timeCardioLBL.Text = "Time (min):"
         '
         'addTimeCardioNBX
         '
+        Me.addTimeCardioNBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addTimeCardioNBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeCardioNBX.Location = New System.Drawing.Point(616, 95)
-        Me.addTimeCardioNBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeCardioNBX.Location = New System.Drawing.Point(402, 103)
         Me.addTimeCardioNBX.Name = "addTimeCardioNBX"
-        Me.addTimeCardioNBX.Size = New System.Drawing.Size(110, 40)
+        Me.addTimeCardioNBX.Size = New System.Drawing.Size(73, 29)
         Me.addTimeCardioNBX.TabIndex = 13
         '
         'timeAerobicsLBL
         '
         Me.timeAerobicsLBL.AutoSize = True
         Me.timeAerobicsLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.timeAerobicsLBL.Location = New System.Drawing.Point(429, 228)
-        Me.timeAerobicsLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.timeAerobicsLBL.Location = New System.Drawing.Point(277, 189)
         Me.timeAerobicsLBL.Name = "timeAerobicsLBL"
-        Me.timeAerobicsLBL.Size = New System.Drawing.Size(180, 37)
+        Me.timeAerobicsLBL.Size = New System.Drawing.Size(119, 25)
         Me.timeAerobicsLBL.TabIndex = 14
         Me.timeAerobicsLBL.Text = "Time (min):"
         '
@@ -158,99 +152,102 @@ Partial Class AddExerciseForm
         '
         Me.timeAnaerobicsLBL.AutoSize = True
         Me.timeAnaerobicsLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.timeAnaerobicsLBL.Location = New System.Drawing.Point(429, 360)
-        Me.timeAnaerobicsLBL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.timeAnaerobicsLBL.Location = New System.Drawing.Point(277, 275)
         Me.timeAnaerobicsLBL.Name = "timeAnaerobicsLBL"
-        Me.timeAnaerobicsLBL.Size = New System.Drawing.Size(180, 37)
+        Me.timeAnaerobicsLBL.Size = New System.Drawing.Size(119, 25)
         Me.timeAnaerobicsLBL.TabIndex = 15
         Me.timeAnaerobicsLBL.Text = "Time (min):"
         '
         'addTimeAerobicsNBX
         '
+        Me.addTimeAerobicsNBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addTimeAerobicsNBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeAerobicsNBX.Location = New System.Drawing.Point(616, 226)
-        Me.addTimeAerobicsNBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeAerobicsNBX.Location = New System.Drawing.Point(402, 188)
         Me.addTimeAerobicsNBX.Name = "addTimeAerobicsNBX"
-        Me.addTimeAerobicsNBX.Size = New System.Drawing.Size(110, 40)
+        Me.addTimeAerobicsNBX.Size = New System.Drawing.Size(73, 29)
         Me.addTimeAerobicsNBX.TabIndex = 16
         '
         'addTimeAnaerobicsNBX
         '
+        Me.addTimeAnaerobicsNBX.BackColor = System.Drawing.Color.AliceBlue
         Me.addTimeAnaerobicsNBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeAnaerobicsNBX.Location = New System.Drawing.Point(616, 358)
-        Me.addTimeAnaerobicsNBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeAnaerobicsNBX.Location = New System.Drawing.Point(402, 274)
         Me.addTimeAnaerobicsNBX.Name = "addTimeAnaerobicsNBX"
-        Me.addTimeAnaerobicsNBX.Size = New System.Drawing.Size(110, 40)
+        Me.addTimeAnaerobicsNBX.Size = New System.Drawing.Size(73, 29)
         Me.addTimeAnaerobicsNBX.TabIndex = 17
         '
         'addTimeCardioBTN
         '
+        Me.addTimeCardioBTN.BackColor = System.Drawing.Color.Bisque
         Me.addTimeCardioBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeCardioBTN.Location = New System.Drawing.Point(752, 94)
-        Me.addTimeCardioBTN.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeCardioBTN.Location = New System.Drawing.Point(492, 102)
         Me.addTimeCardioBTN.Name = "addTimeCardioBTN"
-        Me.addTimeCardioBTN.Size = New System.Drawing.Size(135, 46)
+        Me.addTimeCardioBTN.Size = New System.Drawing.Size(90, 30)
         Me.addTimeCardioBTN.TabIndex = 18
         Me.addTimeCardioBTN.Text = "Add"
-        Me.addTimeCardioBTN.UseVisualStyleBackColor = True
+        Me.addTimeCardioBTN.UseVisualStyleBackColor = False
         '
         'addTimeAerobicsBTN
         '
+        Me.addTimeAerobicsBTN.BackColor = System.Drawing.Color.Bisque
         Me.addTimeAerobicsBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeAerobicsBTN.Location = New System.Drawing.Point(752, 225)
-        Me.addTimeAerobicsBTN.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeAerobicsBTN.Location = New System.Drawing.Point(492, 187)
         Me.addTimeAerobicsBTN.Name = "addTimeAerobicsBTN"
-        Me.addTimeAerobicsBTN.Size = New System.Drawing.Size(135, 46)
+        Me.addTimeAerobicsBTN.Size = New System.Drawing.Size(90, 30)
         Me.addTimeAerobicsBTN.TabIndex = 19
         Me.addTimeAerobicsBTN.Text = "Add"
-        Me.addTimeAerobicsBTN.UseVisualStyleBackColor = True
+        Me.addTimeAerobicsBTN.UseVisualStyleBackColor = False
         '
         'summaryTBX
         '
+        Me.summaryTBX.BackColor = System.Drawing.Color.AliceBlue
         Me.summaryTBX.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.summaryTBX.Location = New System.Drawing.Point(46, 434)
-        Me.summaryTBX.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.summaryTBX.Location = New System.Drawing.Point(22, 330)
         Me.summaryTBX.Multiline = True
         Me.summaryTBX.Name = "summaryTBX"
-        Me.summaryTBX.Size = New System.Drawing.Size(559, 226)
+        Me.summaryTBX.Size = New System.Drawing.Size(560, 148)
         Me.summaryTBX.TabIndex = 21
         '
         'submitBTN
         '
+        Me.submitBTN.BackColor = System.Drawing.Color.Bisque
         Me.submitBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.submitBTN.Location = New System.Drawing.Point(640, 498)
-        Me.submitBTN.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.submitBTN.Location = New System.Drawing.Point(340, 498)
         Me.submitBTN.Name = "submitBTN"
-        Me.submitBTN.Size = New System.Drawing.Size(246, 62)
+        Me.submitBTN.Size = New System.Drawing.Size(242, 59)
         Me.submitBTN.TabIndex = 22
         Me.submitBTN.Text = "Submit"
-        Me.submitBTN.UseVisualStyleBackColor = True
+        Me.submitBTN.UseVisualStyleBackColor = False
         '
         'addTimeAnaerobicsBTN
         '
+        Me.addTimeAnaerobicsBTN.BackColor = System.Drawing.Color.Bisque
         Me.addTimeAnaerobicsBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTimeAnaerobicsBTN.Location = New System.Drawing.Point(752, 357)
-        Me.addTimeAnaerobicsBTN.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.addTimeAnaerobicsBTN.Location = New System.Drawing.Point(492, 273)
         Me.addTimeAnaerobicsBTN.Name = "addTimeAnaerobicsBTN"
-        Me.addTimeAnaerobicsBTN.Size = New System.Drawing.Size(135, 46)
+        Me.addTimeAnaerobicsBTN.Size = New System.Drawing.Size(90, 30)
         Me.addTimeAnaerobicsBTN.TabIndex = 20
         Me.addTimeAnaerobicsBTN.Text = "Add"
-        Me.addTimeAnaerobicsBTN.UseVisualStyleBackColor = True
+        Me.addTimeAnaerobicsBTN.UseVisualStyleBackColor = False
         '
         'exerciseBackBTN
         '
-        Me.exerciseBackBTN.Location = New System.Drawing.Point(12, 12)
+        Me.exerciseBackBTN.BackColor = System.Drawing.Color.Bisque
+        Me.exerciseBackBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.exerciseBackBTN.Location = New System.Drawing.Point(11, 10)
+        Me.exerciseBackBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.exerciseBackBTN.Name = "exerciseBackBTN"
-        Me.exerciseBackBTN.Size = New System.Drawing.Size(129, 40)
+        Me.exerciseBackBTN.Size = New System.Drawing.Size(102, 53)
         Me.exerciseBackBTN.TabIndex = 23
         Me.exerciseBackBTN.Text = "Back"
-        Me.exerciseBackBTN.UseVisualStyleBackColor = True
+        Me.exerciseBackBTN.UseVisualStyleBackColor = False
         '
         'AddExerciseForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(928, 894)
+        Me.BackColor = System.Drawing.Color.Honeydew
+        Me.ClientSize = New System.Drawing.Size(596, 567)
         Me.Controls.Add(Me.exerciseBackBTN)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.summaryTBX)
@@ -270,7 +267,6 @@ Partial Class AddExerciseForm
         Me.Controls.Add(Me.addCardioCBX)
         Me.Controls.Add(Me.addCardioLBL)
         Me.Controls.Add(Me.titleLBL)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "AddExerciseForm"
         Me.Text = "Add Exercise"
         CType(Me.addTimeCardioNBX, System.ComponentModel.ISupportInitialize).EndInit()
