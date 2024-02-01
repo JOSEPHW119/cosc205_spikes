@@ -1,4 +1,5 @@
-﻿Public Class MainMenu
+﻿Option Strict On
+Public Class MainMenu
     Private Sub addMealBTN(sender As Object, e As EventArgs) Handles addMealsBTN.Click
         ' Create an instance of AddMealForm
         Dim addMealForm As New AddMealForm()
