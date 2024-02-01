@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.submitBTN = New System.Windows.Forms.Button()
         Me.infoLBL = New System.Windows.Forms.Label()
         Me.fitnessLBL = New System.Windows.Forms.Label()
@@ -37,6 +38,12 @@ Partial Class Form1
         Me.genderLBL = New System.Windows.Forms.Label()
         Me.emailTBX = New System.Windows.Forms.TextBox()
         Me.emailLBL = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.FitnessAppDBDataSet = New UserDataForm.FitnessAppDBDataSet()
+        Me.UsersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.UsersTableAdapter = New UserDataForm.FitnessAppDBDataSetTableAdapters.UsersTableAdapter()
+        CType(Me.FitnessAppDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'submitBTN
@@ -45,7 +52,7 @@ Partial Class Form1
         Me.submitBTN.Location = New System.Drawing.Point(499, 622)
         Me.submitBTN.Name = "submitBTN"
         Me.submitBTN.Size = New System.Drawing.Size(214, 63)
-        Me.submitBTN.TabIndex = 31
+        Me.submitBTN.TabIndex = 7
         Me.submitBTN.Text = "Submit"
         Me.submitBTN.UseVisualStyleBackColor = True
         '
@@ -77,7 +84,7 @@ Partial Class Form1
         Me.goalsCBX.Location = New System.Drawing.Point(275, 584)
         Me.goalsCBX.Name = "goalsCBX"
         Me.goalsCBX.Size = New System.Drawing.Size(181, 37)
-        Me.goalsCBX.TabIndex = 28
+        Me.goalsCBX.TabIndex = 6
         '
         'goalsLBL
         '
@@ -93,7 +100,7 @@ Partial Class Form1
         Me.ageTBX.Location = New System.Drawing.Point(275, 268)
         Me.ageTBX.Name = "ageTBX"
         Me.ageTBX.Size = New System.Drawing.Size(181, 34)
-        Me.ageTBX.TabIndex = 26
+        Me.ageTBX.TabIndex = 2
         '
         'ageLBL
         '
@@ -109,7 +116,7 @@ Partial Class Form1
         Me.weightTBX.Location = New System.Drawing.Point(275, 420)
         Me.weightTBX.Name = "weightTBX"
         Me.weightTBX.Size = New System.Drawing.Size(181, 34)
-        Me.weightTBX.TabIndex = 24
+        Me.weightTBX.TabIndex = 4
         '
         'weightLBL
         '
@@ -125,7 +132,7 @@ Partial Class Form1
         Me.heightTBX.Location = New System.Drawing.Point(275, 343)
         Me.heightTBX.Name = "heightTBX"
         Me.heightTBX.Size = New System.Drawing.Size(181, 34)
-        Me.heightTBX.TabIndex = 22
+        Me.heightTBX.TabIndex = 3
         '
         'heightLBL
         '
@@ -143,7 +150,7 @@ Partial Class Form1
         Me.genderCBX.Location = New System.Drawing.Point(275, 499)
         Me.genderCBX.Name = "genderCBX"
         Me.genderCBX.Size = New System.Drawing.Size(181, 37)
-        Me.genderCBX.TabIndex = 20
+        Me.genderCBX.TabIndex = 5
         '
         'genderLBL
         '
@@ -159,7 +166,7 @@ Partial Class Form1
         Me.emailTBX.Location = New System.Drawing.Point(275, 191)
         Me.emailTBX.Name = "emailTBX"
         Me.emailTBX.Size = New System.Drawing.Size(299, 34)
-        Me.emailTBX.TabIndex = 18
+        Me.emailTBX.TabIndex = 1
         '
         'emailLBL
         '
@@ -170,11 +177,38 @@ Partial Class Form1
         Me.emailLBL.TabIndex = 17
         Me.emailLBL.Text = "Email:"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DataSource = Me.UsersBindingSource
+        Me.ComboBox1.DisplayMember = "email"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(574, 268)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 37)
+        Me.ComboBox1.TabIndex = 8
+        Me.ComboBox1.TabStop = False
+        Me.ComboBox1.ValueMember = "weight_kg"
+        '
+        'FitnessAppDBDataSet
+        '
+        Me.FitnessAppDBDataSet.DataSetName = "FitnessAppDBDataSet"
+        Me.FitnessAppDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'UsersBindingSource
+        '
+        Me.UsersBindingSource.DataMember = "Users"
+        Me.UsersBindingSource.DataSource = Me.FitnessAppDBDataSet
+        '
+        'UsersTableAdapter
+        '
+        Me.UsersTableAdapter.ClearBeforeFill = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(782, 753)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.infoLBL)
         Me.Controls.Add(Me.fitnessLBL)
@@ -191,9 +225,11 @@ Partial Class Form1
         Me.Controls.Add(Me.emailTBX)
         Me.Controls.Add(Me.emailLBL)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.FitnessAppDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,4 +250,8 @@ Partial Class Form1
     Friend WithEvents genderLBL As Label
     Friend WithEvents emailTBX As TextBox
     Friend WithEvents emailLBL As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents FitnessAppDBDataSet As FitnessAppDBDataSet
+    Friend WithEvents UsersBindingSource As BindingSource
+    Friend WithEvents UsersTableAdapter As FitnessAppDBDataSetTableAdapters.UsersTableAdapter
 End Class
