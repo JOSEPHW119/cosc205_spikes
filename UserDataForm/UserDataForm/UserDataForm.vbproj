@@ -91,6 +91,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddExerciseForm.Designer.vb">
+      <DependentUpon>AddExerciseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddExerciseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMealForm.Designer.vb">
+      <DependentUpon>AddMealForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMealForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FitnessAppDB.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,17 +113,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FitnessAppDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="FitnessData.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="FitnessData.Designer.vb">
+      <DependentUpon>FitnessData.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Suggestion.Designer.vb">
+      <DependentUpon>Form_Suggestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Suggestion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -125,8 +150,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="AddExerciseForm.resx">
+      <DependentUpon>AddExerciseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMealForm.resx">
+      <DependentUpon>AddMealForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FitnessData.resx">
+      <DependentUpon>FitnessData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Suggestion.resx">
+      <DependentUpon>Form_Suggestion.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
