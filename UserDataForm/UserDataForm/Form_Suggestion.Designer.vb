@@ -34,7 +34,7 @@ Partial Class Form_Suggestion
         Me.CalBurned_TBX = New System.Windows.Forms.TextBox()
         Me.InTake_TBX = New System.Windows.Forms.TextBox()
         Me.Submit_BTN = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SuggestionsBackBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Title_LBL
@@ -53,7 +53,7 @@ Partial Class Form_Suggestion
         Me.Age_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Age_LBL.Location = New System.Drawing.Point(74, 130)
         Me.Age_LBL.Name = "Age_LBL"
-        Me.Age_LBL.Size = New System.Drawing.Size(91, 18)
+        Me.Age_LBL.Size = New System.Drawing.Size(149, 29)
         Me.Age_LBL.TabIndex = 2
         Me.Age_LBL.Text = "Your Age is: "
         '
@@ -62,7 +62,7 @@ Partial Class Form_Suggestion
         Me.BMI_TBX.BackColor = System.Drawing.Color.AliceBlue
         Me.BMI_TBX.Location = New System.Drawing.Point(238, 166)
         Me.BMI_TBX.Name = "BMI_TBX"
-        Me.BMI_TBX.Size = New System.Drawing.Size(100, 24)
+        Me.BMI_TBX.Size = New System.Drawing.Size(100, 33)
         Me.BMI_TBX.TabIndex = 4
         '
         'Goal_TBX
@@ -70,7 +70,7 @@ Partial Class Form_Suggestion
         Me.Goal_TBX.BackColor = System.Drawing.Color.AliceBlue
         Me.Goal_TBX.Location = New System.Drawing.Point(238, 210)
         Me.Goal_TBX.Name = "Goal_TBX"
-        Me.Goal_TBX.Size = New System.Drawing.Size(100, 24)
+        Me.Goal_TBX.Size = New System.Drawing.Size(100, 33)
         Me.Goal_TBX.TabIndex = 5
         '
         'Goal_LBL
@@ -79,7 +79,7 @@ Partial Class Form_Suggestion
         Me.Goal_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goal_LBL.Location = New System.Drawing.Point(74, 213)
         Me.Goal_LBL.Name = "Goal_LBL"
-        Me.Goal_LBL.Size = New System.Drawing.Size(98, 18)
+        Me.Goal_LBL.Size = New System.Drawing.Size(157, 29)
         Me.Goal_LBL.TabIndex = 6
         Me.Goal_LBL.Text = "Your Goal is: "
         '
@@ -89,7 +89,7 @@ Partial Class Form_Suggestion
         Me.BMI_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BMI_LBL.Location = New System.Drawing.Point(74, 169)
         Me.BMI_LBL.Name = "BMI_LBL"
-        Me.BMI_LBL.Size = New System.Drawing.Size(92, 18)
+        Me.BMI_LBL.Size = New System.Drawing.Size(148, 29)
         Me.BMI_LBL.TabIndex = 7
         Me.BMI_LBL.Text = "Your BMI is: "
         '
@@ -98,7 +98,7 @@ Partial Class Form_Suggestion
         Me.Age_TBX.BackColor = System.Drawing.Color.AliceBlue
         Me.Age_TBX.Location = New System.Drawing.Point(238, 127)
         Me.Age_TBX.Name = "Age_TBX"
-        Me.Age_TBX.Size = New System.Drawing.Size(100, 24)
+        Me.Age_TBX.Size = New System.Drawing.Size(100, 33)
         Me.Age_TBX.TabIndex = 3
         '
         'InTake_LBL
@@ -107,7 +107,7 @@ Partial Class Form_Suggestion
         Me.InTake_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.InTake_LBL.Location = New System.Drawing.Point(74, 261)
         Me.InTake_LBL.Name = "InTake_LBL"
-        Me.InTake_LBL.Size = New System.Drawing.Size(126, 18)
+        Me.InTake_LBL.Size = New System.Drawing.Size(203, 29)
         Me.InTake_LBL.TabIndex = 11
         Me.InTake_LBL.Text = "Today's intake is: "
         '
@@ -117,7 +117,7 @@ Partial Class Form_Suggestion
         Me.CalBurned_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CalBurned_LBL.Location = New System.Drawing.Point(74, 303)
         Me.CalBurned_LBL.Name = "CalBurned_LBL"
-        Me.CalBurned_LBL.Size = New System.Drawing.Size(122, 18)
+        Me.CalBurned_LBL.Size = New System.Drawing.Size(199, 29)
         Me.CalBurned_LBL.TabIndex = 10
         Me.CalBurned_LBL.Text = "Calories Burned: "
         '
@@ -126,7 +126,7 @@ Partial Class Form_Suggestion
         Me.CalBurned_TBX.BackColor = System.Drawing.Color.AliceBlue
         Me.CalBurned_TBX.Location = New System.Drawing.Point(238, 300)
         Me.CalBurned_TBX.Name = "CalBurned_TBX"
-        Me.CalBurned_TBX.Size = New System.Drawing.Size(100, 24)
+        Me.CalBurned_TBX.Size = New System.Drawing.Size(100, 33)
         Me.CalBurned_TBX.TabIndex = 9
         '
         'InTake_TBX
@@ -134,7 +134,7 @@ Partial Class Form_Suggestion
         Me.InTake_TBX.BackColor = System.Drawing.Color.AliceBlue
         Me.InTake_TBX.Location = New System.Drawing.Point(238, 255)
         Me.InTake_TBX.Name = "InTake_TBX"
-        Me.InTake_TBX.Size = New System.Drawing.Size(100, 24)
+        Me.InTake_TBX.Size = New System.Drawing.Size(100, 33)
         Me.InTake_TBX.TabIndex = 8
         '
         'Submit_BTN
@@ -148,23 +148,23 @@ Partial Class Form_Suggestion
         Me.Submit_BTN.Text = "Submit"
         Me.Submit_BTN.UseVisualStyleBackColor = False
         '
-        'Button1
+        'SuggestionsBackBTN
         '
-        Me.Button1.BackColor = System.Drawing.Color.Bisque
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(107, 40)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.SuggestionsBackBTN.BackColor = System.Drawing.Color.Bisque
+        Me.SuggestionsBackBTN.Location = New System.Drawing.Point(12, 12)
+        Me.SuggestionsBackBTN.Name = "SuggestionsBackBTN"
+        Me.SuggestionsBackBTN.Size = New System.Drawing.Size(107, 40)
+        Me.SuggestionsBackBTN.TabIndex = 13
+        Me.SuggestionsBackBTN.Text = "Back"
+        Me.SuggestionsBackBTN.UseVisualStyleBackColor = False
         '
         'Form_Suggestion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(405, 432)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.SuggestionsBackBTN)
         Me.Controls.Add(Me.Submit_BTN)
         Me.Controls.Add(Me.InTake_LBL)
         Me.Controls.Add(Me.CalBurned_LBL)
@@ -197,5 +197,5 @@ Partial Class Form_Suggestion
     Friend WithEvents CalBurned_TBX As TextBox
     Friend WithEvents InTake_TBX As TextBox
     Friend WithEvents Submit_BTN As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents SuggestionsBackBTN As Button
 End Class

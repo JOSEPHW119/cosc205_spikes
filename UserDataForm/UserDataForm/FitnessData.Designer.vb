@@ -37,7 +37,7 @@ Partial Class FitnessData
         Me.genderLBL = New System.Windows.Forms.Label()
         Me.emailTBX = New System.Windows.Forms.TextBox()
         Me.emailLBL = New System.Windows.Forms.Label()
-        Me.backBTN = New System.Windows.Forms.Button()
+        Me.FitnessDataBackBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'submitBTN
@@ -58,7 +58,7 @@ Partial Class FitnessData
         Me.infoLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.infoLBL.Location = New System.Drawing.Point(29, 78)
         Me.infoLBL.Name = "infoLBL"
-        Me.infoLBL.Size = New System.Drawing.Size(465, 18)
+        Me.infoLBL.Size = New System.Drawing.Size(759, 29)
         Me.infoLBL.TabIndex = 30
         Me.infoLBL.Text = "Please fill out the following fields. When you are finished, click Submit."
         '
@@ -68,7 +68,7 @@ Partial Class FitnessData
         Me.fitnessLBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fitnessLBL.Location = New System.Drawing.Point(173, 22)
         Me.fitnessLBL.Name = "fitnessLBL"
-        Me.fitnessLBL.Size = New System.Drawing.Size(250, 31)
+        Me.fitnessLBL.Size = New System.Drawing.Size(368, 47)
         Me.fitnessLBL.TabIndex = 29
         Me.fitnessLBL.Text = "User Fitness Data"
         '
@@ -79,7 +79,7 @@ Partial Class FitnessData
         Me.goalsCBX.Items.AddRange(New Object() {"Weight Loss", "Muscle Gain"})
         Me.goalsCBX.Location = New System.Drawing.Point(203, 348)
         Me.goalsCBX.Name = "goalsCBX"
-        Me.goalsCBX.Size = New System.Drawing.Size(181, 30)
+        Me.goalsCBX.Size = New System.Drawing.Size(181, 40)
         Me.goalsCBX.TabIndex = 28
         '
         'goalsLBL
@@ -87,7 +87,7 @@ Partial Class FitnessData
         Me.goalsLBL.AutoSize = True
         Me.goalsLBL.Location = New System.Drawing.Point(28, 351)
         Me.goalsLBL.Name = "goalsLBL"
-        Me.goalsLBL.Size = New System.Drawing.Size(58, 24)
+        Me.goalsLBL.Size = New System.Drawing.Size(89, 32)
         Me.goalsLBL.TabIndex = 27
         Me.goalsLBL.Text = "Goals"
         '
@@ -96,7 +96,7 @@ Partial Class FitnessData
         Me.ageTBX.BackColor = System.Drawing.Color.AliceBlue
         Me.ageTBX.Location = New System.Drawing.Point(203, 172)
         Me.ageTBX.Name = "ageTBX"
-        Me.ageTBX.Size = New System.Drawing.Size(181, 28)
+        Me.ageTBX.Size = New System.Drawing.Size(181, 39)
         Me.ageTBX.TabIndex = 26
         '
         'ageLBL
@@ -104,7 +104,7 @@ Partial Class FitnessData
         Me.ageLBL.AutoSize = True
         Me.ageLBL.Location = New System.Drawing.Point(28, 175)
         Me.ageLBL.Name = "ageLBL"
-        Me.ageLBL.Size = New System.Drawing.Size(50, 24)
+        Me.ageLBL.Size = New System.Drawing.Size(73, 32)
         Me.ageLBL.TabIndex = 25
         Me.ageLBL.Text = "Age:"
         '
@@ -113,7 +113,7 @@ Partial Class FitnessData
         Me.weightTBX.BackColor = System.Drawing.Color.AliceBlue
         Me.weightTBX.Location = New System.Drawing.Point(203, 259)
         Me.weightTBX.Name = "weightTBX"
-        Me.weightTBX.Size = New System.Drawing.Size(181, 28)
+        Me.weightTBX.Size = New System.Drawing.Size(181, 39)
         Me.weightTBX.TabIndex = 24
         '
         'weightLBL
@@ -121,7 +121,7 @@ Partial Class FitnessData
         Me.weightLBL.AutoSize = True
         Me.weightLBL.Location = New System.Drawing.Point(28, 262)
         Me.weightLBL.Name = "weightLBL"
-        Me.weightLBL.Size = New System.Drawing.Size(74, 24)
+        Me.weightLBL.Size = New System.Drawing.Size(111, 32)
         Me.weightLBL.TabIndex = 23
         Me.weightLBL.Text = "Weight:"
         '
@@ -130,7 +130,7 @@ Partial Class FitnessData
         Me.heightTBX.BackColor = System.Drawing.Color.AliceBlue
         Me.heightTBX.Location = New System.Drawing.Point(203, 215)
         Me.heightTBX.Name = "heightTBX"
-        Me.heightTBX.Size = New System.Drawing.Size(181, 28)
+        Me.heightTBX.Size = New System.Drawing.Size(181, 39)
         Me.heightTBX.TabIndex = 22
         '
         'heightLBL
@@ -138,7 +138,7 @@ Partial Class FitnessData
         Me.heightLBL.AutoSize = True
         Me.heightLBL.Location = New System.Drawing.Point(28, 218)
         Me.heightLBL.Name = "heightLBL"
-        Me.heightLBL.Size = New System.Drawing.Size(70, 24)
+        Me.heightLBL.Size = New System.Drawing.Size(105, 32)
         Me.heightLBL.TabIndex = 21
         Me.heightLBL.Text = "Height:"
         '
@@ -149,7 +149,7 @@ Partial Class FitnessData
         Me.genderCBX.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.genderCBX.Location = New System.Drawing.Point(203, 302)
         Me.genderCBX.Name = "genderCBX"
-        Me.genderCBX.Size = New System.Drawing.Size(181, 30)
+        Me.genderCBX.Size = New System.Drawing.Size(181, 40)
         Me.genderCBX.TabIndex = 20
         '
         'genderLBL
@@ -157,7 +157,7 @@ Partial Class FitnessData
         Me.genderLBL.AutoSize = True
         Me.genderLBL.Location = New System.Drawing.Point(28, 305)
         Me.genderLBL.Name = "genderLBL"
-        Me.genderLBL.Size = New System.Drawing.Size(79, 24)
+        Me.genderLBL.Size = New System.Drawing.Size(117, 32)
         Me.genderLBL.TabIndex = 19
         Me.genderLBL.Text = "Gender:"
         '
@@ -166,7 +166,7 @@ Partial Class FitnessData
         Me.emailTBX.BackColor = System.Drawing.Color.AliceBlue
         Me.emailTBX.Location = New System.Drawing.Point(203, 128)
         Me.emailTBX.Name = "emailTBX"
-        Me.emailTBX.Size = New System.Drawing.Size(299, 28)
+        Me.emailTBX.Size = New System.Drawing.Size(299, 39)
         Me.emailTBX.TabIndex = 18
         '
         'emailLBL
@@ -174,28 +174,28 @@ Partial Class FitnessData
         Me.emailLBL.AutoSize = True
         Me.emailLBL.Location = New System.Drawing.Point(28, 131)
         Me.emailLBL.Name = "emailLBL"
-        Me.emailLBL.Size = New System.Drawing.Size(62, 24)
+        Me.emailLBL.Size = New System.Drawing.Size(94, 32)
         Me.emailLBL.TabIndex = 17
         Me.emailLBL.Text = "Email:"
         '
-        'backBTN
+        'FitnessDataBackBTN
         '
-        Me.backBTN.BackColor = System.Drawing.Color.Bisque
-        Me.backBTN.Location = New System.Drawing.Point(13, 13)
-        Me.backBTN.Name = "backBTN"
-        Me.backBTN.Size = New System.Drawing.Size(128, 40)
-        Me.backBTN.TabIndex = 33
-        Me.backBTN.Text = "Back"
-        Me.backBTN.UseVisualStyleBackColor = False
+        Me.FitnessDataBackBTN.BackColor = System.Drawing.Color.Bisque
+        Me.FitnessDataBackBTN.Location = New System.Drawing.Point(13, 13)
+        Me.FitnessDataBackBTN.Name = "FitnessDataBackBTN"
+        Me.FitnessDataBackBTN.Size = New System.Drawing.Size(128, 40)
+        Me.FitnessDataBackBTN.TabIndex = 33
+        Me.FitnessDataBackBTN.Text = "Back"
+        Me.FitnessDataBackBTN.UseVisualStyleBackColor = False
         '
         'FitnessData
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 22.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(530, 489)
-        Me.Controls.Add(Me.backBTN)
+        Me.Controls.Add(Me.FitnessDataBackBTN)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.infoLBL)
         Me.Controls.Add(Me.fitnessLBL)
@@ -235,5 +235,5 @@ Partial Class FitnessData
     Friend WithEvents genderLBL As Label
     Friend WithEvents emailTBX As TextBox
     Friend WithEvents emailLBL As Label
-    Friend WithEvents backBTN As Button
+    Friend WithEvents FitnessDataBackBTN As Button
 End Class
