@@ -83,11 +83,11 @@ Partial Class FitnessData
         'goalsLBL
         '
         Me.goalsLBL.AutoSize = True
-        Me.goalsLBL.Location = New System.Drawing.Point(100, 587)
+        Me.goalsLBL.Location = New System.Drawing.Point(120, 587)
         Me.goalsLBL.Name = "goalsLBL"
-        Me.goalsLBL.Size = New System.Drawing.Size(89, 32)
+        Me.goalsLBL.Size = New System.Drawing.Size(97, 32)
         Me.goalsLBL.TabIndex = 27
-        Me.goalsLBL.Text = "Goals"
+        Me.goalsLBL.Text = "Goals:"
         '
         'ageTBX
         '
@@ -99,7 +99,7 @@ Partial Class FitnessData
         'ageLBL
         '
         Me.ageLBL.AutoSize = True
-        Me.ageLBL.Location = New System.Drawing.Point(100, 271)
+        Me.ageLBL.Location = New System.Drawing.Point(144, 271)
         Me.ageLBL.Name = "ageLBL"
         Me.ageLBL.Size = New System.Drawing.Size(73, 32)
         Me.ageLBL.TabIndex = 25
@@ -115,7 +115,7 @@ Partial Class FitnessData
         'weightLBL
         '
         Me.weightLBL.AutoSize = True
-        Me.weightLBL.Location = New System.Drawing.Point(100, 423)
+        Me.weightLBL.Location = New System.Drawing.Point(106, 423)
         Me.weightLBL.Name = "weightLBL"
         Me.weightLBL.Size = New System.Drawing.Size(111, 32)
         Me.weightLBL.TabIndex = 23
@@ -131,11 +131,11 @@ Partial Class FitnessData
         'heightLBL
         '
         Me.heightLBL.AutoSize = True
-        Me.heightLBL.Location = New System.Drawing.Point(100, 346)
+        Me.heightLBL.Location = New System.Drawing.Point(50, 346)
         Me.heightLBL.Name = "heightLBL"
-        Me.heightLBL.Size = New System.Drawing.Size(105, 32)
+        Me.heightLBL.Size = New System.Drawing.Size(167, 32)
         Me.heightLBL.TabIndex = 21
-        Me.heightLBL.Text = "Height:"
+        Me.heightLBL.Text = "Height (cm):"
         '
         'genderCBX
         '
@@ -166,7 +166,7 @@ Partial Class FitnessData
         'emailLBL
         '
         Me.emailLBL.AutoSize = True
-        Me.emailLBL.Location = New System.Drawing.Point(100, 194)
+        Me.emailLBL.Location = New System.Drawing.Point(123, 194)
         Me.emailLBL.Name = "emailLBL"
         Me.emailLBL.Size = New System.Drawing.Size(94, 32)
         Me.emailLBL.TabIndex = 17
