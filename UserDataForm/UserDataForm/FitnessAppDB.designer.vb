@@ -22,51 +22,75 @@ Imports System.Linq.Expressions
 Imports System.Reflection
 
 
-<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="FitnessAppDB")>
+<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="FitnessAppDB")>  _
 Partial Public Class FitnessAppDBDataContext
 	Inherits System.Data.Linq.DataContext
-
+	
 	Private Shared mappingSource As System.Data.Linq.Mapping.MappingSource = New AttributeMappingSource()
-
-#Region "Extensibility Method Definitions"
-	Partial Private Sub OnCreated()
-	End Sub
-	Partial Private Sub InsertUser(instance As User)
-	End Sub
-	Partial Private Sub UpdateUser(instance As User)
-	End Sub
-	Partial Private Sub DeleteUser(instance As User)
-	End Sub
-#End Region
-
+	
+  #Region "Extensibility Method Definitions"
+  Partial Private Sub OnCreated()
+  End Sub
+  Partial Private Sub InsertUser(instance As User)
+    End Sub
+  Partial Private Sub UpdateUser(instance As User)
+    End Sub
+  Partial Private Sub DeleteUser(instance As User)
+    End Sub
+  Partial Private Sub InsertMeal(instance As Meal)
+    End Sub
+  Partial Private Sub UpdateMeal(instance As Meal)
+    End Sub
+  Partial Private Sub DeleteMeal(instance As Meal)
+    End Sub
+  Partial Private Sub InsertExercise(instance As Exercise)
+    End Sub
+  Partial Private Sub UpdateExercise(instance As Exercise)
+    End Sub
+  Partial Private Sub DeleteExercise(instance As Exercise)
+    End Sub
+  #End Region
+	
 	Public Sub New()
 		MyBase.New(Global.UserDataForm.My.MySettings.Default.FitnessAppDBConnectionString, mappingSource)
-		OnCreated()
+		OnCreated
 	End Sub
-
+	
 	Public Sub New(ByVal connection As String)
 		MyBase.New(connection, mappingSource)
-		OnCreated()
+		OnCreated
 	End Sub
-
+	
 	Public Sub New(ByVal connection As System.Data.IDbConnection)
 		MyBase.New(connection, mappingSource)
-		OnCreated()
+		OnCreated
 	End Sub
-
+	
 	Public Sub New(ByVal connection As String, ByVal mappingSource As System.Data.Linq.Mapping.MappingSource)
 		MyBase.New(connection, mappingSource)
-		OnCreated()
+		OnCreated
 	End Sub
-
+	
 	Public Sub New(ByVal connection As System.Data.IDbConnection, ByVal mappingSource As System.Data.Linq.Mapping.MappingSource)
 		MyBase.New(connection, mappingSource)
-		OnCreated()
+		OnCreated
 	End Sub
-
+	
 	Public ReadOnly Property Users() As System.Data.Linq.Table(Of User)
 		Get
 			Return Me.GetTable(Of User)
+		End Get
+	End Property
+	
+	Public ReadOnly Property Meals() As System.Data.Linq.Table(Of Meal)
+		Get
+			Return Me.GetTable(Of Meal)
+		End Get
+	End Property
+	
+	Public ReadOnly Property Exercises() As System.Data.Linq.Table(Of Exercise)
+		Get
+			Return Me.GetTable(Of Exercise)
 		End Get
 	End Property
 End Class
@@ -222,6 +246,151 @@ Partial Public Class User
 				Me._goal = value
 				Me.SendPropertyChanged("goal")
 				Me.OngoalChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Meals")>  _
+Partial Public Class Meal
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Ingredients As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnIngredientsChanging(value As String)
+    End Sub
+    Partial Private Sub OnIngredientsChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Ingredients", DbType:="VarChar(MAX) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
+	Public Property Ingredients() As String
+		Get
+			Return Me._Ingredients
+		End Get
+		Set
+			If (String.Equals(Me._Ingredients, value) = false) Then
+				Me.OnIngredientsChanging(value)
+				Me.SendPropertyChanging
+				Me._Ingredients = value
+				Me.SendPropertyChanged("Ingredients")
+				Me.OnIngredientsChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Exercises")>  _
+Partial Public Class Exercise
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Exercise As String
+	
+	Private _Minutes As Integer
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnExerciseChanging(value As String)
+    End Sub
+    Partial Private Sub OnExerciseChanged()
+    End Sub
+    Partial Private Sub OnMinutesChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnMinutesChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Exercise", DbType:="VarChar(50) NOT NULL", CanBeNull:=false, IsPrimaryKey:=true)>  _
+	Public Property Exercise() As String
+		Get
+			Return Me._Exercise
+		End Get
+		Set
+			If (String.Equals(Me._Exercise, value) = false) Then
+				Me.OnExerciseChanging(value)
+				Me.SendPropertyChanging
+				Me._Exercise = value
+				Me.SendPropertyChanged("Exercise")
+				Me.OnExerciseChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Minutes", DbType:="Int NOT NULL")>  _
+	Public Property Minutes() As Integer
+		Get
+			Return Me._Minutes
+		End Get
+		Set
+			If ((Me._Minutes = value)  _
+						= false) Then
+				Me.OnMinutesChanging(value)
+				Me.SendPropertyChanging
+				Me._Minutes = value
+				Me.SendPropertyChanged("Minutes")
+				Me.OnMinutesChanged
 			End If
 		End Set
 	End Property
