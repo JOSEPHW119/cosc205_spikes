@@ -37,8 +37,7 @@ Partial Class FitnessData
         Me.genderLBL = New System.Windows.Forms.Label()
         Me.emailTBX = New System.Windows.Forms.TextBox()
         Me.emailLBL = New System.Windows.Forms.Label()
-        Me.addMealBTN = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.FitnessDataBackBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'submitBTN
@@ -173,23 +172,14 @@ Partial Class FitnessData
         Me.emailLBL.TabIndex = 17
         Me.emailLBL.Text = "Email:"
         '
-        'addMealBTN
+        'FitnessDataBackBTN
         '
-        Me.addMealBTN.Location = New System.Drawing.Point(106, 648)
-        Me.addMealBTN.Name = "addMealBTN"
-        Me.addMealBTN.Size = New System.Drawing.Size(158, 37)
-        Me.addMealBTN.TabIndex = 32
-        Me.addMealBTN.Text = "Add Meal"
-        Me.addMealBTN.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(13, 13)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(128, 40)
-        Me.Button1.TabIndex = 33
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.FitnessDataBackBTN.Location = New System.Drawing.Point(13, 13)
+        Me.FitnessDataBackBTN.Name = "FitnessDataBackBTN"
+        Me.FitnessDataBackBTN.Size = New System.Drawing.Size(128, 40)
+        Me.FitnessDataBackBTN.TabIndex = 33
+        Me.FitnessDataBackBTN.Text = "Back"
+        Me.FitnessDataBackBTN.UseVisualStyleBackColor = True
         '
         'FitnessData
         '
@@ -197,8 +187,7 @@ Partial Class FitnessData
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.ClientSize = New System.Drawing.Size(782, 753)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.addMealBTN)
+        Me.Controls.Add(Me.FitnessDataBackBTN)
         Me.Controls.Add(Me.submitBTN)
         Me.Controls.Add(Me.infoLBL)
         Me.Controls.Add(Me.fitnessLBL)
@@ -238,6 +227,5 @@ Partial Class FitnessData
     Friend WithEvents genderLBL As Label
     Friend WithEvents emailTBX As TextBox
     Friend WithEvents emailLBL As Label
-    Friend WithEvents addMealBTN As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents FitnessDataBackBTN As Button
 End Class

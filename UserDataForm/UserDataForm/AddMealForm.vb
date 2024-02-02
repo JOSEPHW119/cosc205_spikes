@@ -1,5 +1,5 @@
 ﻿Public Class AddMealForm
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub AddMealForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Create a form that adds meals to the user's profile. (2 hours) Amol
     End Sub
 
@@ -79,13 +79,16 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Create an instance of MainMenu
-        Dim main As New MainMenu()
 
         ' Hide addMeal  
-        Me.Hide()
+        Me.Close()
 
-        ' Show MainMenu
-        MainMenu.Show()
+    End Sub
+
+    ' Handle the FormClosed event
+    Private Sub AddMealForm_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        ' Show MainMenu when AddMealForm is closed
+        Dim mainMenu As New MainMenu()
+        mainMenu.Show()
     End Sub
 End Class

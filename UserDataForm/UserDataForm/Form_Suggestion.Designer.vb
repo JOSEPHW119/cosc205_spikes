@@ -34,7 +34,7 @@ Partial Class Form_Suggestion
         Me.CalBurned_TBX = New System.Windows.Forms.TextBox()
         Me.InTake_TBX = New System.Windows.Forms.TextBox()
         Me.Submit_BTN = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SuggestionsBackBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Title_LBL
@@ -137,21 +137,21 @@ Partial Class Form_Suggestion
         Me.Submit_BTN.Text = "SUBMIT"
         Me.Submit_BTN.UseVisualStyleBackColor = True
         '
-        'Button1
+        'SuggestionsBackBTN
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 32)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.SuggestionsBackBTN.Location = New System.Drawing.Point(12, 12)
+        Me.SuggestionsBackBTN.Name = "SuggestionsBackBTN"
+        Me.SuggestionsBackBTN.Size = New System.Drawing.Size(91, 32)
+        Me.SuggestionsBackBTN.TabIndex = 13
+        Me.SuggestionsBackBTN.Text = "Back"
+        Me.SuggestionsBackBTN.UseVisualStyleBackColor = True
         '
         'Form_Suggestion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(459, 500)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.SuggestionsBackBTN)
         Me.Controls.Add(Me.Submit_BTN)
         Me.Controls.Add(Me.InTake_LBL)
         Me.Controls.Add(Me.CalBurned_LBL)
@@ -183,5 +183,5 @@ Partial Class Form_Suggestion
     Friend WithEvents CalBurned_TBX As TextBox
     Friend WithEvents InTake_TBX As TextBox
     Friend WithEvents Submit_BTN As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents SuggestionsBackBTN As Button
 End Class

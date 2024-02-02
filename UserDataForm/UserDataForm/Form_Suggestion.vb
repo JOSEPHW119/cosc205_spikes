@@ -47,14 +47,16 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Create an instance of MainMenu
-        Dim addFitness As New MainMenu()
+    Private Sub SuggestionBackBTN_Click(sender As Object, e As EventArgs) Handles SuggestionsBackBTN.Click
 
         ' Hide Suggestions
-        Me.Hide()
+        Me.Close()
 
-        ' Show MainMenu
-        MainMenu.Show()
+    End Sub
+
+    Private Sub Form_Suggestion_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        ' Show MainMenu when AddExerciseForm is closed
+        Dim mainMenu As New MainMenu()
+        mainMenu.Show()
     End Sub
 End Class
