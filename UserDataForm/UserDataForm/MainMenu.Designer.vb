@@ -30,49 +30,63 @@ Partial Class MainMenu
         '
         'addMealsBTN
         '
-        Me.addMealsBTN.Location = New System.Drawing.Point(100, 262)
+        Me.addMealsBTN.BackColor = System.Drawing.Color.Bisque
+        Me.addMealsBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addMealsBTN.Location = New System.Drawing.Point(30, 158)
+        Me.addMealsBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.addMealsBTN.Name = "addMealsBTN"
-        Me.addMealsBTN.Size = New System.Drawing.Size(230, 40)
+        Me.addMealsBTN.Size = New System.Drawing.Size(184, 85)
         Me.addMealsBTN.TabIndex = 0
         Me.addMealsBTN.Text = "Add Meals"
-        Me.addMealsBTN.UseVisualStyleBackColor = True
+        Me.addMealsBTN.UseVisualStyleBackColor = False
         '
         'fitnessBTN
         '
-        Me.fitnessBTN.Location = New System.Drawing.Point(100, 127)
+        Me.fitnessBTN.BackColor = System.Drawing.Color.Bisque
+        Me.fitnessBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fitnessBTN.Location = New System.Drawing.Point(30, 43)
+        Me.fitnessBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.fitnessBTN.Name = "fitnessBTN"
-        Me.fitnessBTN.Size = New System.Drawing.Size(230, 43)
+        Me.fitnessBTN.Size = New System.Drawing.Size(184, 87)
         Me.fitnessBTN.TabIndex = 1
         Me.fitnessBTN.Text = "Fitness Info"
-        Me.fitnessBTN.UseVisualStyleBackColor = True
+        Me.fitnessBTN.UseVisualStyleBackColor = False
         '
         'suggestionBTN
         '
-        Me.suggestionBTN.Location = New System.Drawing.Point(532, 131)
+        Me.suggestionBTN.BackColor = System.Drawing.Color.Bisque
+        Me.suggestionBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.suggestionBTN.Location = New System.Drawing.Point(229, 45)
+        Me.suggestionBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.suggestionBTN.Name = "suggestionBTN"
-        Me.suggestionBTN.Size = New System.Drawing.Size(218, 39)
+        Me.suggestionBTN.Size = New System.Drawing.Size(184, 85)
         Me.suggestionBTN.TabIndex = 2
         Me.suggestionBTN.Text = "Suggestions"
-        Me.suggestionBTN.UseVisualStyleBackColor = True
+        Me.suggestionBTN.UseVisualStyleBackColor = False
         '
         'addExerciseBTN
         '
-        Me.addExerciseBTN.Location = New System.Drawing.Point(532, 262)
+        Me.addExerciseBTN.BackColor = System.Drawing.Color.Bisque
+        Me.addExerciseBTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addExerciseBTN.Location = New System.Drawing.Point(229, 158)
+        Me.addExerciseBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.addExerciseBTN.Name = "addExerciseBTN"
-        Me.addExerciseBTN.Size = New System.Drawing.Size(218, 40)
+        Me.addExerciseBTN.Size = New System.Drawing.Size(184, 85)
         Me.addExerciseBTN.TabIndex = 3
         Me.addExerciseBTN.Text = "Add Exercise"
-        Me.addExerciseBTN.UseVisualStyleBackColor = True
+        Me.addExerciseBTN.UseVisualStyleBackColor = False
         '
         'MainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(878, 544)
+        Me.BackColor = System.Drawing.Color.Honeydew
+        Me.ClientSize = New System.Drawing.Size(442, 286)
         Me.Controls.Add(Me.addExerciseBTN)
         Me.Controls.Add(Me.suggestionBTN)
         Me.Controls.Add(Me.fitnessBTN)
         Me.Controls.Add(Me.addMealsBTN)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MainMenu"
         Me.Text = "Main Menu"
         Me.ResumeLayout(False)

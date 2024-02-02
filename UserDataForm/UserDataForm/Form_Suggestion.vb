@@ -1,4 +1,5 @@
-﻿Public Class Form_Suggestion
+﻿Option Strict On
+Public Class Form_Suggestion
     Private Sub Submit_BTN_Click(sender As Object, e As EventArgs) Handles Submit_BTN.Click
         ' Declare variables to store user input
         Dim age As Integer

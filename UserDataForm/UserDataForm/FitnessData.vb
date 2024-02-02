@@ -44,14 +44,14 @@ Public Class FitnessData
         goalsCBX.Text = ""
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Back(sender As Object, e As EventArgs) Handles backBTN.Click, submitBTN.Click
         ' Create an instance of MainMenu
         Dim addFitness As New MainMenu()
 
         ' Hide FitnessData
         Me.Hide()
 
-        ' Show FitnessData
+        ' Show MainMenu
         MainMenu.Show()
     End Sub
 End Class
